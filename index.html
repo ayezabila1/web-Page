@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <!-- Logo Image -->
+        <a class="navbar-brand" href="#">
+            <img src="images/logoint.png" alt="Shop Logo" height="100">
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero">
+    <div class="container">
+        <h1>Shop Smart, Shop Online</h1>
+        <p>Discover quality products at affordable prices</p>
+        <a href="#products" class="btn btn-light btn-lg">Shop Now</a>
+    </div>
+</section>
+
+<!-- ========== PRODUCTS ========== -->
+<section class="products py-5" id="products">
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Products</h2>
+
+        <div class="row g-4">
+            <!-- Product Card -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src= "images/w.jpg" alt="product">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Smart Watch</h5>
+                        <p class="price">$99</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="images/laptop.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wireless Headphones</h5>
+                        <p class="price">$129</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="images/b.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Laptop Bag</h5>
+                        <p class="price">$49</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== MODAL ========== -->
+<div class="modal fade" id="productModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Product Details</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/w.jpg" class="img-fluid mb-3">
+                <p>High quality product with excellent performance.</p>
+                <h5>$99</h5>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/laptop.jpg" class="img-fluid mb-3">
+                <p>High quality product with excellent performance.</p>
+                <h5>$129</h5>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/b.jpg" class="img-fluid mb-3">
+                <p>High quality product with excellent performance.</p>
+                <h5>$49</h5>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success">Add to Cart</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Your trusted online shopping platform.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Useful Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Contact</h5>
+                <p>Email: info@shop.com</p>
+                <p>Phone: +123 456 789</p>
+            </div>
+        </div>
+
+        <hr>
+        <p class="text-center mb-0">&copy; 2026 ShopLogo. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
